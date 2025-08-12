@@ -84,7 +84,10 @@ def extract_info_from_pdf(file):
 st.set_page_config(page_title="PDF Data Extractor", layout="wide")
 
 st.title("📄 PDF Data Extractor")
-st.write("Upload one or more PDF files to extract payment, challan, and tax breakup details.")
+st.write(
+    "This website helps you extract challan details and tax breakup information from one or more PDF files, "
+    "and download the results in Excel format for quick analysis."
+)
 
 uploaded_files = st.file_uploader(
     "Choose PDF files",
@@ -120,3 +123,7 @@ if uploaded_files:
         )
     else:
         st.warning("⚠ No valid data extracted from the uploaded files.")
+
+# Footer
+st.markdown("---")
+st.markdown("**Created by Biswajit Chakraborty**")
