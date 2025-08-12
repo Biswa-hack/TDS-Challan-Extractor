@@ -83,7 +83,7 @@ def extract_info_from_pdf(file):
 # -----------------------------
 st.set_page_config(page_title="TDS Challan Data Extractor", layout="wide")
 
-st.title("📄 PDF Data Extractor")
+st.title("📄 TDS Challan Data Extractor")
 st.write(
     "This website helps you extract challan details and tax breakup information from one or more PDF files, "
     "and download the results in Excel format for quick analysis."
@@ -127,4 +127,5 @@ if uploaded_files:
 # Footer
 st.markdown("---")
 st.markdown("**Created by Biswajit Chakraborty**")
+
 
