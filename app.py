@@ -81,7 +81,7 @@ def extract_info_from_pdf(file):
 # -----------------------------
 # Streamlit UI
 # -----------------------------
-st.set_page_config(page_title="PDF Data Extractor", layout="wide")
+st.set_page_config(page_title="TDS Challan Data Extractor", layout="wide")
 
 st.title("📄 PDF Data Extractor")
 st.write(
@@ -127,3 +127,4 @@ if uploaded_files:
 # Footer
 st.markdown("---")
 st.markdown("**Created by Biswajit Chakraborty**")
+
